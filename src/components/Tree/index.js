@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import './styles.css';
-
 import {GET_TREE_URL} from '../../constants';
 
 import {SearchTermProvider} from '../../providers/Search-term-provider';
@@ -27,7 +25,7 @@ function Tree() {
         setLoading(false);
       });
   }, []);
-  
+
   const onFilter = (searchTerm = "") => setFilteredtree(filterTree(searchTerm));
 
   const filterTree = (searchTerm = "", nextNode = filteredTree) => {
