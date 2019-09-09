@@ -1,0 +1,11 @@
+.match-node {
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 0 10px 10px #fff;
+  transition: background .5s, box-shadow .5s;
+}
+
+.active-link {
+  font-weight: bold;
+}
